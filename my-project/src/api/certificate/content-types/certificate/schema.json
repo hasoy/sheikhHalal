@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificates",
+  "info": {
+    "singularName": "certificate",
+    "pluralName": "certificates",
+    "displayName": "certificate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "naam": {
+      "type": "string"
+    },
+    "code": {
+      "type": "biginteger"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "vegan",
+        "vega"
+      ]
+    },
+    "validity": {
+      "type": "boolean"
+    }
+  }
+}

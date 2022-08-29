@@ -15,14 +15,38 @@
     "barcode": {
       "type": "biginteger"
     },
-    "ingredients": {
-      "type": "json"
-    },
     "productName": {
       "type": "string"
     },
-    "created": {
-      "type": "date"
+    "ingredients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ingredient.ingredient",
+      "inversedBy": "products"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "food",
+        "medicine",
+        "cosmetica"
+      ]
+    },
+    "land": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "certificates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::certificate.certificate"
+    },
+    "supplier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::supplier.supplier"
     }
   }
 }
