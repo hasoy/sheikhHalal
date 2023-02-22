@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "barcode": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "unique": true
     },
     "productName": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "ingredients": {
       "type": "relation",
@@ -24,7 +26,7 @@
       "target": "api::ingredient.ingredient",
       "inversedBy": "products"
     },
-    "Category": {
+    "category": {
       "type": "enumeration",
       "enum": [
         "food",
@@ -47,6 +49,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::supplier.supplier"
+    },
+    "store": {
+      "type": "string"
     }
   }
 }

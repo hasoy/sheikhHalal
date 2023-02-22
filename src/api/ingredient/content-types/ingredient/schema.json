@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "products": {
       "type": "relation",
@@ -26,7 +27,8 @@
       "enum": [
         "halal",
         "haram",
-        "twijfel"
+        "unknown",
+        "disputed"
       ]
     },
     "source": {

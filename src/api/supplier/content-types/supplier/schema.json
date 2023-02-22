@@ -4,7 +4,8 @@
   "info": {
     "singularName": "supplier",
     "pluralName": "suppliers",
-    "displayName": "supplier"
+    "displayName": "supplier",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,10 +18,7 @@
     "email": {
       "type": "email"
     },
-    "telephoneNumber": {
-      "type": "biginteger"
-    },
-    "adress": {
+    "address": {
       "type": "string"
     }
   }
