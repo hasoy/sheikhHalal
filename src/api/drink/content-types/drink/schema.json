@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drinks",
+  "info": {
+    "singularName": "drink",
+    "pluralName": "drinks",
+    "displayName": "category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drink.drink"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

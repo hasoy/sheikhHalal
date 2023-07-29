@@ -26,7 +26,7 @@
       "target": "api::ingredient.ingredient",
       "inversedBy": "products"
     },
-    "category": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "food",
@@ -40,18 +40,28 @@
     "explanation": {
       "type": "text"
     },
-    "certificates": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::certificate.certificate"
-    },
-    "supplier": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::supplier.supplier"
-    },
     "store": {
       "type": "string"
+    },
+    "allIngredients": {
+      "type": "text"
+    },
+    "verificationComments": {
+      "type": "richtext"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "lastVerified": {
+      "type": "datetime"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::drink.drink"
+    },
+    "scannedAmount": {
+      "type": "integer"
     }
   }
 }

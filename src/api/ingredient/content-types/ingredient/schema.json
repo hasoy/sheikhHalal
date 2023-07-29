@@ -41,6 +41,9 @@
     },
     "explanation": {
       "type": "text"
+    },
+    "verification": {
+      "type": "richtext"
     }
   }
 }

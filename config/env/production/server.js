@@ -1,3 +1,3 @@
-// module.exports = ({ env }) => ({
-//   url: env(APP_URL),
-// });
+module.exports = ({ env }) => ({
+  url: env(APP_URL),
+});
