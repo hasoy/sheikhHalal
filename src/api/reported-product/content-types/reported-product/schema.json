@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reported_products",
+  "info": {
+    "singularName": "reported-product",
+    "pluralName": "reported-products",
+    "displayName": "ReportedProduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barcode": {
+      "type": "biginteger"
+    },
+    "reason": {
+      "type": "enumeration",
+      "enum": [
+        "duplicate",
+        "haram",
+        "halal",
+        "ingredientMissing",
+        "doubtful",
+        "incorrectName"
+      ]
+    },
+    "customReason": {
+      "type": "text"
+    },
+    "reportedBy": {
+      "type": "string"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "reported_products"
+    }
+  }
+}

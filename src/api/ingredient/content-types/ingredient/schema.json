@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -27,23 +27,48 @@
       "enum": [
         "halal",
         "haram",
-        "unknown",
-        "disputed"
-      ]
-    },
-    "source": {
-      "type": "enumeration",
-      "enum": [
-        "plant",
-        "animal",
-        "synthetic"
+        "doubtful",
+        "unknown"
       ]
     },
     "explanation": {
       "type": "text"
     },
-    "verification": {
-      "type": "richtext"
+    "maliki": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "haram",
+        "doubtful",
+        "unknown"
+      ]
+    },
+    "shafi": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "haram",
+        "doubtful",
+        "unknown"
+      ]
+    },
+    "hanbali": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "haram",
+        "doubtful",
+        "unknown"
+      ]
+    },
+    "hanifi": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "haram",
+        "doubtful",
+        "unknown"
+      ]
     }
   }
 }

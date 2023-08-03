@@ -8,17 +8,19 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "barcode": {
       "type": "biginteger",
-      "unique": true
+      "unique": true,
+      "pluginOptions": {}
     },
     "productName": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "pluginOptions": {}
     },
     "ingredients": {
       "type": "relation",
@@ -26,34 +28,21 @@
       "target": "api::ingredient.ingredient",
       "inversedBy": "products"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "food",
-        "medicine",
-        "cosmetica"
-      ]
-    },
     "land": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "explanation": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "store": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "allIngredients": {
-      "type": "text"
-    },
-    "verificationComments": {
-      "type": "richtext"
-    },
-    "verified": {
-      "type": "boolean"
-    },
-    "lastVerified": {
-      "type": "datetime"
+      "type": "text",
+      "pluginOptions": {}
     },
     "category": {
       "type": "relation",
@@ -61,7 +50,20 @@
       "target": "api::drink.drink"
     },
     "scannedAmount": {
-      "type": "integer"
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "product_verifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-verification.product-verification",
+      "mappedBy": "product"
+    },
+    "reported_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reported-product.reported-product",
+      "mappedBy": "product"
     }
   }
 }
