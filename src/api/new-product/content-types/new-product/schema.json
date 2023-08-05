@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_products",
+  "info": {
+    "singularName": "new-product",
+    "pluralName": "new-products",
+    "displayName": "newProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "text"
+    },
+    "barcode": {
+      "type": "biginteger"
+    },
+    "addedBy": {
+      "type": "string"
+    }
+  }
+}
