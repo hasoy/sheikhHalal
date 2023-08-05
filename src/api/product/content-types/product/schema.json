@@ -64,6 +64,9 @@
       "relation": "oneToMany",
       "target": "api::reported-product.reported-product",
       "mappedBy": "product"
+    },
+    "weight": {
+      "type": "string"
     }
   }
 }
