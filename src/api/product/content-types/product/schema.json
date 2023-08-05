@@ -19,7 +19,7 @@
     },
     "productName": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "pluginOptions": {}
     },
     "ingredients": {
