@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "barcode": {
-      "type": "biginteger",
-      "unique": true,
-      "pluginOptions": {}
-    },
     "productName": {
       "type": "string",
       "unique": false,
@@ -66,6 +61,9 @@
       "mappedBy": "product"
     },
     "weight": {
+      "type": "string"
+    },
+    "barcode": {
       "type": "string"
     }
   }
