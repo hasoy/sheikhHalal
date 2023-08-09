@@ -1,24 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "drinks",
+  "collectionName": "categories",
   "info": {
-    "singularName": "drink",
-    "pluralName": "drinks",
+    "singularName": "category",
+    "pluralName": "categories",
     "displayName": "category",
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "category": {
+    "categories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::drink.drink"
+      "target": "api::category.category"
     },
     "slug": {
       "type": "uid",

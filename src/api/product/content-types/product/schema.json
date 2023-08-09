@@ -39,11 +39,6 @@
       "type": "text",
       "pluginOptions": {}
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::drink.drink"
-    },
     "scannedAmount": {
       "type": "integer",
       "pluginOptions": {}
