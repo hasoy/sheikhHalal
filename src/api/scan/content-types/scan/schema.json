@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scans",
+  "info": {
+    "singularName": "scan",
+    "pluralName": "scans",
+    "displayName": "scan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barcode": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

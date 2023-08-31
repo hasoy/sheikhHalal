@@ -27,10 +27,6 @@
       "type": "string",
       "pluginOptions": {}
     },
-    "explanation": {
-      "type": "text",
-      "pluginOptions": {}
-    },
     "store": {
       "type": "string",
       "pluginOptions": {}
@@ -59,7 +55,32 @@
       "type": "string"
     },
     "barcode": {
+      "type": "string",
+      "unique": true
+    },
+    "vegan": {
+      "type": "boolean"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like"
+    },
+    "dislikes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dislike.dislike"
+    },
+    "scans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scan.scan"
+    },
+    "category": {
       "type": "string"
+    },
+    "allergens": {
+      "type": "json"
     }
   }
 }

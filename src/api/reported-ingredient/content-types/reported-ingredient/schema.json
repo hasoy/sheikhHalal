@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reported_ingredients",
+  "info": {
+    "singularName": "reported-ingredient",
+    "pluralName": "reported-ingredients",
+    "displayName": "reportedIngredient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "explanation": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ingredient.ingredient"
+    }
+  }
+}

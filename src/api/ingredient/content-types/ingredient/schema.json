@@ -69,6 +69,11 @@
         "doubtful",
         "unknown"
       ]
+    },
+    "reported_ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reported-ingredient.reported-ingredient"
     }
   }
 }
