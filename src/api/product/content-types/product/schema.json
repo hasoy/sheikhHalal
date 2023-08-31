@@ -81,6 +81,12 @@
     },
     "allergens": {
       "type": "json"
+    },
+    "lifestyle": {
+      "type": "json"
+    },
+    "contact": {
+      "type": "json"
     }
   }
 }
