@@ -22,8 +22,9 @@
     },
     "ingredient": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::ingredient.ingredient"
+      "relation": "manyToOne",
+      "target": "api::ingredient.ingredient",
+      "inversedBy": "reported_ingredients"
     }
   }
 }

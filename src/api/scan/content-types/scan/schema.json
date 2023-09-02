@@ -4,16 +4,14 @@
   "info": {
     "singularName": "scan",
     "pluralName": "scans",
-    "displayName": "scan"
+    "displayName": "scan",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "barcode": {
-      "type": "string"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
@@ -21,11 +19,9 @@
     },
     "product": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
-    },
-    "date": {
-      "type": "datetime"
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "scans"
     }
   }
 }

@@ -73,7 +73,8 @@
     "reported_ingredients": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::reported-ingredient.reported-ingredient"
+      "target": "api::reported-ingredient.reported-ingredient",
+      "mappedBy": "ingredient"
     }
   }
 }

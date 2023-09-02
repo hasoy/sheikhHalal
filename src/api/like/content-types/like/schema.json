@@ -4,16 +4,14 @@
   "info": {
     "singularName": "like",
     "pluralName": "likes",
-    "displayName": "like"
+    "displayName": "like",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "barcode": {
-      "type": "string"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
@@ -21,8 +19,9 @@
     },
     "product": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "likes"
     }
   }
 }

@@ -64,17 +64,20 @@
     "likes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::like.like"
+      "target": "api::like.like",
+      "mappedBy": "product"
     },
     "dislikes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::dislike.dislike"
+      "target": "api::dislike.dislike",
+      "mappedBy": "product"
     },
     "scans": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::scan.scan"
+      "target": "api::scan.scan",
+      "mappedBy": "product"
     },
     "category": {
       "type": "string"
