@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ingredient_status_ingredient_statuses",
+  "info": {
+    "displayName": "ingredientStatus",
+    "icon": "restaurant",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "schoolOfThought": {
+      "type": "json"
+    },
+    "consensus": {
+      "type": "boolean"
+    },
+    "regex": {
+      "type": "string",
+      "private": true
+    }
+  }
+}

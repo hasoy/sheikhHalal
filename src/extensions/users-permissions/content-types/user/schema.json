@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -63,16 +62,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::like.like"
-    },
-    "dislikes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::dislike.dislike"
-    },
     "product_verifications": {
       "type": "relation",
       "relation": "oneToMany",
@@ -92,6 +81,23 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::scan.scan"
+    },
+    "schoolOfThought": {
+      "type": "enumeration",
+      "enum": [
+        "maliki",
+        "hanifi",
+        "hanbali",
+        "shafi",
+        "default"
+      ],
+      "default": "default"
+    },
+    "productAddedBy": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::new-product.new-product",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

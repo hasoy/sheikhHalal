@@ -61,18 +61,6 @@
     "vegan": {
       "type": "boolean"
     },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::like.like",
-      "mappedBy": "product"
-    },
-    "dislikes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::dislike.dislike",
-      "mappedBy": "product"
-    },
     "scans": {
       "type": "relation",
       "relation": "oneToMany",

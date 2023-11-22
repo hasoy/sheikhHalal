@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "ingredient_statuses",
+  "info": {
+    "singularName": "ingredient-status",
+    "pluralName": "ingredient-statuses",
+    "displayName": "ingredientStatus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "consensus": {
+      "type": "boolean"
+    },
+    "schoolOfThought": {
+      "type": "json"
+    }
+  }
+}

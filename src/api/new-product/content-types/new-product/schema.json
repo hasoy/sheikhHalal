@@ -4,7 +4,8 @@
   "info": {
     "singularName": "new-product",
     "pluralName": "new-products",
-    "displayName": "newProduct"
+    "displayName": "newProduct",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,8 +21,11 @@
     "barcode": {
       "type": "biginteger"
     },
-    "addedBy": {
-      "type": "string"
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "productAddedBy"
     }
   }
 }

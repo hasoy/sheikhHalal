@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "unique": true
     },
@@ -22,59 +22,23 @@
       "target": "api::product.product",
       "mappedBy": "ingredients"
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "halal",
-        "haram",
-        "doubtful",
-        "unknown"
-      ]
-    },
-    "explanation": {
-      "type": "text"
-    },
-    "maliki": {
-      "type": "enumeration",
-      "enum": [
-        "halal",
-        "haram",
-        "doubtful",
-        "unknown"
-      ]
-    },
-    "shafi": {
-      "type": "enumeration",
-      "enum": [
-        "halal",
-        "haram",
-        "doubtful",
-        "unknown"
-      ]
-    },
-    "hanbali": {
-      "type": "enumeration",
-      "enum": [
-        "halal",
-        "haram",
-        "doubtful",
-        "unknown"
-      ]
-    },
-    "hanifi": {
-      "type": "enumeration",
-      "enum": [
-        "halal",
-        "haram",
-        "doubtful",
-        "unknown"
-      ]
-    },
     "reported_ingredients": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reported-ingredient.reported-ingredient",
       "mappedBy": "ingredient"
+    },
+    "haram_ingredient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::haram-ingredient.haram-ingredient",
+      "inversedBy": "ingredients"
+    },
+    "doubtful_ingredient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doubtful-ingredient.doubtful-ingredient",
+      "inversedBy": "ingredients"
     }
   }
 }

@@ -1,31 +1,31 @@
 {
   "name": "my-project",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "description": "A Strapi application",
-  "scripts": {
-    "dev": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "dependencies": {
-    "@strapi/plugin-i18n": "4.14.5",
-    "@strapi/plugin-users-permissions": "4.14.5",
-    "@strapi/strapi": "4.14.5",
-    "better-sqlite3": "^7.6.2",
-    "pg": "^8.11.3",
-    "pg-connection-string": "^2.6.1"
-  },
+  "license": "MIT",
   "author": {
     "name": "A Strapi developer"
   },
-  "strapi": {
-    "uuid": "bb09ff8a-0f95-45cb-b8b1-4ca4d0cd4bec"
+  "scripts": {
+    "build": "strapi build",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.7.0",
+    "@strapi/plugin-users-permissions": "4.7.0",
+    "@strapi/strapi": "4.7.0",
+    "better-sqlite3": "^7.6.2",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.1"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "bb09ff8a-0f95-45cb-b8b1-4ca4d0cd4bec"
+  }
 }

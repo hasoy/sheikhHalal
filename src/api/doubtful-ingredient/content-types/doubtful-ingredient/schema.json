@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doubtful_ingredients",
+  "info": {
+    "singularName": "doubtful-ingredient",
+    "pluralName": "doubtful-ingredients",
+    "displayName": "doubtfulIngredient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ingredientState": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ingredient-status.ingredient-status"
+    },
+    "ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingredient.ingredient",
+      "mappedBy": "doubtful_ingredient"
+    }
+  }
+}
