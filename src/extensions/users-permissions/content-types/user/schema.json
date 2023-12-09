@@ -62,42 +62,34 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "product_verifications": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-verification.product-verification"
-    },
-    "reported_products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reported-product.reported-product"
-    },
-    "new_products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::new-product.new-product"
-    },
-    "scans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::scan.scan"
-    },
     "schoolOfThought": {
       "type": "enumeration",
       "enum": [
         "maliki",
-        "hanifi",
+        "hanafi",
         "hanbali",
         "shafi",
         "default"
       ],
       "default": "default"
     },
+    "scans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scan.scan",
+      "mappedBy": "scan"
+    },
+    "reported_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reported-product.reported-product",
+      "mappedBy": "user"
+    },
     "productAddedBy": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::new-product.new-product",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "addedBy"
     }
   }
 }

@@ -659,30 +659,25 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
-    product_verifications: Attribute.Relation<
+    schoolOfThought: Attribute.Enumeration<
+      ['maliki', 'hanafi', 'hanbali', 'shafi', 'default']
+    > &
+      Attribute.DefaultTo<'default'>;
+    scans: Attribute.Relation<
       'plugin::users-permissions.user',
       'oneToMany',
-      'api::product-verification.product-verification'
+      'api::scan.scan'
     >;
     reported_products: Attribute.Relation<
       'plugin::users-permissions.user',
       'oneToMany',
       'api::reported-product.reported-product'
     >;
-    new_products: Attribute.Relation<
+    productAddedBy: Attribute.Relation<
       'plugin::users-permissions.user',
       'oneToMany',
       'api::new-product.new-product'
     >;
-    scans: Attribute.Relation<
-      'plugin::users-permissions.user',
-      'oneToMany',
-      'api::scan.scan'
-    >;
-    schoolOfThought: Attribute.Enumeration<
-      ['maliki', 'hanifi', 'hanbali', 'shafi', 'default']
-    > &
-      Attribute.DefaultTo<'default'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -693,43 +688,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'plugin::users-permissions.user',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCategoryCategory extends Schema.CollectionType {
-  collectionName: 'categories';
-  info: {
-    singularName: 'category';
-    pluralName: 'categories';
-    displayName: 'category';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String;
-    categories: Attribute.Relation<
-      'api::category.category',
-      'oneToMany',
-      'api::category.category'
-    >;
-    slug: Attribute.UID<'api::category.category', 'name'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::category.category',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::category.category',
       'oneToOne',
       'admin::user'
     > &
@@ -750,9 +708,11 @@ export interface ApiDoubtfulIngredientDoubtfulIngredient
     draftAndPublish: false;
   };
   attributes: {
-    ingredientStatus: Attribute.Component<
-      'ingredient-status.ingredient-status',
-      true
+    ingredientState: Attribute.Component<'ingredient-status.ingredient-status'>;
+    ingredients: Attribute.Relation<
+      'api::doubtful-ingredient.doubtful-ingredient',
+      'oneToMany',
+      'api::ingredient.ingredient'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -784,9 +744,11 @@ export interface ApiHaramIngredientHaramIngredient
     draftAndPublish: false;
   };
   attributes: {
-    ingredientStatus: Attribute.Component<
-      'ingredient-status.ingredient-status',
-      true
+    ingredientState: Attribute.Component<'ingredient-status.ingredient-status'>;
+    ingredients: Attribute.Relation<
+      'api::haram-ingredient.haram-ingredient',
+      'oneToMany',
+      'api::ingredient.ingredient'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -823,19 +785,14 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
       'manyToMany',
       'api::product.product'
     >;
-    reported_ingredients: Attribute.Relation<
-      'api::ingredient.ingredient',
-      'oneToMany',
-      'api::reported-ingredient.reported-ingredient'
-    >;
     haram_ingredient: Attribute.Relation<
       'api::ingredient.ingredient',
-      'oneToOne',
+      'manyToOne',
       'api::haram-ingredient.haram-ingredient'
     >;
     doubtful_ingredient: Attribute.Relation<
       'api::ingredient.ingredient',
-      'oneToOne',
+      'manyToOne',
       'api::doubtful-ingredient.doubtful-ingredient'
     >;
     createdAt: Attribute.DateTime;
@@ -855,12 +812,47 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
   };
 }
 
+export interface ApiIngredientStatusIngredientStatus extends Schema.SingleType {
+  collectionName: 'ingredient_statuses';
+  info: {
+    singularName: 'ingredient-status';
+    pluralName: 'ingredient-statuses';
+    displayName: 'ingredientStatus';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    explanation: Attribute.Text;
+    consensus: Attribute.Boolean;
+    schoolOfThought: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::ingredient-status.ingredient-status',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::ingredient-status.ingredient-status',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiNewProductNewProduct extends Schema.CollectionType {
   collectionName: 'new_products';
   info: {
     singularName: 'new-product';
     pluralName: 'new-products';
     displayName: 'newProduct';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -868,8 +860,12 @@ export interface ApiNewProductNewProduct extends Schema.CollectionType {
   attributes: {
     productName: Attribute.String;
     ingredients: Attribute.Text;
-    barcode: Attribute.BigInteger;
-    addedBy: Attribute.String;
+    barcode: Attribute.BigInteger & Attribute.Unique;
+    addedBy: Attribute.Relation<
+      'api::new-product.new-product',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -909,12 +905,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
     land: Attribute.String;
     store: Attribute.String;
     allIngredients: Attribute.Text;
-    scannedAmount: Attribute.Integer;
-    product_verifications: Attribute.Relation<
-      'api::product.product',
-      'oneToMany',
-      'api::product-verification.product-verification'
-    >;
     reported_products: Attribute.Relation<
       'api::product.product',
       'oneToMany',
@@ -949,87 +939,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
 }
 
-export interface ApiProductVerificationProductVerification
-  extends Schema.CollectionType {
-  collectionName: 'product_verifications';
-  info: {
-    singularName: 'product-verification';
-    pluralName: 'product-verifications';
-    displayName: 'ProductVerification';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    verifiedBy: Attribute.String;
-    oldValue: Attribute.Text;
-    newValue: Attribute.Text;
-    explanation: Attribute.Text;
-    product: Attribute.Relation<
-      'api::product-verification.product-verification',
-      'manyToOne',
-      'api::product.product'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::product-verification.product-verification',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::product-verification.product-verification',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiReportedIngredientReportedIngredient
-  extends Schema.CollectionType {
-  collectionName: 'reported_ingredients';
-  info: {
-    singularName: 'reported-ingredient';
-    pluralName: 'reported-ingredients';
-    displayName: 'reportedIngredient';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    explanation: Attribute.String;
-    users_permissions_user: Attribute.Relation<
-      'api::reported-ingredient.reported-ingredient',
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
-    ingredient: Attribute.Relation<
-      'api::reported-ingredient.reported-ingredient',
-      'manyToOne',
-      'api::ingredient.ingredient'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::reported-ingredient.reported-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::reported-ingredient.reported-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiReportedProductReportedProduct
   extends Schema.CollectionType {
   collectionName: 'reported_products';
@@ -1055,11 +964,15 @@ export interface ApiReportedProductReportedProduct
       ]
     >;
     customReason: Attribute.Text;
-    reportedBy: Attribute.String;
     product: Attribute.Relation<
       'api::reported-product.reported-product',
       'manyToOne',
       'api::product.product'
+    >;
+    user: Attribute.Relation<
+      'api::reported-product.reported-product',
+      'manyToOne',
+      'plugin::users-permissions.user'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1090,15 +1003,15 @@ export interface ApiScanScan extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    users_permissions_user: Attribute.Relation<
-      'api::scan.scan',
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
     product: Attribute.Relation<
       'api::scan.scan',
       'manyToOne',
       'api::product.product'
+    >;
+    scan: Attribute.Relation<
+      'api::scan.scan',
+      'manyToOne',
+      'plugin::users-permissions.user'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1126,14 +1039,12 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::category.category': ApiCategoryCategory;
       'api::doubtful-ingredient.doubtful-ingredient': ApiDoubtfulIngredientDoubtfulIngredient;
       'api::haram-ingredient.haram-ingredient': ApiHaramIngredientHaramIngredient;
       'api::ingredient.ingredient': ApiIngredientIngredient;
+      'api::ingredient-status.ingredient-status': ApiIngredientStatusIngredientStatus;
       'api::new-product.new-product': ApiNewProductNewProduct;
       'api::product.product': ApiProductProduct;
-      'api::product-verification.product-verification': ApiProductVerificationProductVerification;
-      'api::reported-ingredient.reported-ingredient': ApiReportedIngredientReportedIngredient;
       'api::reported-product.reported-product': ApiReportedProductReportedProduct;
       'api::scan.scan': ApiScanScan;
     }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ingredient-status",
     "pluralName": "ingredient-statuses",
-    "displayName": "ingredientStatus"
+    "displayName": "ingredientStatus",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "explanation": {
-      "type": "string"
+      "type": "text"
     },
     "consensus": {
       "type": "boolean"

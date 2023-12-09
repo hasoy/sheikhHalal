@@ -29,13 +29,16 @@
     "customReason": {
       "type": "text"
     },
-    "reportedBy": {
-      "type": "string"
-    },
     "product": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::product.product",
+      "inversedBy": "reported_products"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "reported_products"
     }
   }

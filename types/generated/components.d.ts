@@ -5,11 +5,16 @@ export interface IngredientStatusIngredientStatus extends Schema.Component {
   info: {
     displayName: 'ingredientStatus';
     icon: 'restaurant';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     explanation: Attribute.Text;
     schoolOfThought: Attribute.JSON;
+    consensus: Attribute.Boolean;
+    regex: Attribute.String & Attribute.Private;
+    istihala: Attribute.Boolean;
+    istihlaak: Attribute.Boolean;
   };
 }
 

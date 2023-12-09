@@ -19,9 +19,10 @@
       "type": "text"
     },
     "barcode": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "unique": true
     },
-    "users_permissions_user": {
+    "addedBy": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",

@@ -22,12 +22,6 @@
       "target": "api::product.product",
       "mappedBy": "ingredients"
     },
-    "reported_ingredients": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reported-ingredient.reported-ingredient",
-      "mappedBy": "ingredient"
-    },
     "haram_ingredient": {
       "type": "relation",
       "relation": "manyToOne",

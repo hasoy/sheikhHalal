@@ -9,7 +9,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "explanation": {
       "type": "text"
@@ -23,6 +23,12 @@
     "regex": {
       "type": "string",
       "private": true
+    },
+    "istihala": {
+      "type": "boolean"
+    },
+    "istihlaak": {
+      "type": "boolean"
     }
   }
 }

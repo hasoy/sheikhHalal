@@ -35,16 +35,6 @@
       "type": "text",
       "pluginOptions": {}
     },
-    "scannedAmount": {
-      "type": "integer",
-      "pluginOptions": {}
-    },
-    "product_verifications": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-verification.product-verification",
-      "mappedBy": "product"
-    },
     "reported_products": {
       "type": "relation",
       "relation": "oneToMany",

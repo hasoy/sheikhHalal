@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "sheikhhalal",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -14,16 +14,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.7.0",
-    "@strapi/plugin-users-permissions": "4.7.0",
-    "@strapi/strapi": "4.7.0",
-    "better-sqlite3": "^7.6.2",
+    "@strapi/plugin-i18n": "4.15.4",
+    "@strapi/plugin-users-permissions": "4.15.4",
+    "@strapi/strapi": "4.15.4",
+    "better-sqlite3": "^9.1.1",
     "pg": "^8.11.3",
-    "pg-connection-string": "^2.6.1"
-  },
-  "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
+    "pg-connection-string": "^2.6.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
   },
   "strapi": {
     "uuid": "bb09ff8a-0f95-45cb-b8b1-4ca4d0cd4bec"
