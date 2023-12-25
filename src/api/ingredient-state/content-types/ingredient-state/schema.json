@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredient_states",
+  "info": {
+    "singularName": "ingredient-state",
+    "pluralName": "ingredient-states",
+    "displayName": "ingredientState",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "consensus": {
+      "type": "boolean"
+    },
+    "istihlaak": {
+      "type": "boolean"
+    },
+    "istihala": {
+      "type": "boolean"
+    },
+    "haram": {
+      "type": "boolean"
+    },
+    "regex": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "schoolOfThought": {
+      "type": "json"
+    },
+    "ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingredient.ingredient",
+      "mappedBy": "ingredient_state"
+    }
+  }
+}

@@ -695,78 +695,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiDoubtfulIngredientDoubtfulIngredient
-  extends Schema.CollectionType {
-  collectionName: 'doubtful_ingredients';
-  info: {
-    singularName: 'doubtful-ingredient';
-    pluralName: 'doubtful-ingredients';
-    displayName: 'doubtfulIngredient';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    ingredientState: Attribute.Component<'ingredient-status.ingredient-status'>;
-    ingredients: Attribute.Relation<
-      'api::doubtful-ingredient.doubtful-ingredient',
-      'oneToMany',
-      'api::ingredient.ingredient'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::doubtful-ingredient.doubtful-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::doubtful-ingredient.doubtful-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiHaramIngredientHaramIngredient
-  extends Schema.CollectionType {
-  collectionName: 'haram_ingredients';
-  info: {
-    singularName: 'haram-ingredient';
-    pluralName: 'haram-ingredients';
-    displayName: 'haramIngredient';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    ingredientState: Attribute.Component<'ingredient-status.ingredient-status'>;
-    ingredients: Attribute.Relation<
-      'api::haram-ingredient.haram-ingredient',
-      'oneToMany',
-      'api::ingredient.ingredient'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::haram-ingredient.haram-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::haram-ingredient.haram-ingredient',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiIngredientIngredient extends Schema.CollectionType {
   collectionName: 'ingredients';
   info: {
@@ -785,15 +713,10 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
       'manyToMany',
       'api::product.product'
     >;
-    haram_ingredient: Attribute.Relation<
+    ingredient_state: Attribute.Relation<
       'api::ingredient.ingredient',
       'manyToOne',
-      'api::haram-ingredient.haram-ingredient'
-    >;
-    doubtful_ingredient: Attribute.Relation<
-      'api::ingredient.ingredient',
-      'manyToOne',
-      'api::doubtful-ingredient.doubtful-ingredient'
+      'api::ingredient-state.ingredient-state'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -805,6 +728,50 @@ export interface ApiIngredientIngredient extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::ingredient.ingredient',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiIngredientStateIngredientState
+  extends Schema.CollectionType {
+  collectionName: 'ingredient_states';
+  info: {
+    singularName: 'ingredient-state';
+    pluralName: 'ingredient-states';
+    displayName: 'ingredientState';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    consensus: Attribute.Boolean;
+    istihlaak: Attribute.Boolean;
+    istihala: Attribute.Boolean;
+    haram: Attribute.Boolean;
+    regex: Attribute.String;
+    explanation: Attribute.Text;
+    schoolOfThought: Attribute.JSON;
+    ingredients: Attribute.Relation<
+      'api::ingredient-state.ingredient-state',
+      'oneToMany',
+      'api::ingredient.ingredient'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::ingredient-state.ingredient-state',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::ingredient-state.ingredient-state',
       'oneToOne',
       'admin::user'
     > &
@@ -1039,9 +1006,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::doubtful-ingredient.doubtful-ingredient': ApiDoubtfulIngredientDoubtfulIngredient;
-      'api::haram-ingredient.haram-ingredient': ApiHaramIngredientHaramIngredient;
       'api::ingredient.ingredient': ApiIngredientIngredient;
+      'api::ingredient-state.ingredient-state': ApiIngredientStateIngredientState;
       'api::ingredient-status.ingredient-status': ApiIngredientStatusIngredientStatus;
       'api::new-product.new-product': ApiNewProductNewProduct;
       'api::product.product': ApiProductProduct;

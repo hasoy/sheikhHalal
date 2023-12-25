@@ -22,16 +22,10 @@
       "target": "api::product.product",
       "mappedBy": "ingredients"
     },
-    "haram_ingredient": {
+    "ingredient_state": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::haram-ingredient.haram-ingredient",
-      "inversedBy": "ingredients"
-    },
-    "doubtful_ingredient": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::doubtful-ingredient.doubtful-ingredient",
+      "target": "api::ingredient-state.ingredient-state",
       "inversedBy": "ingredients"
     }
   }
