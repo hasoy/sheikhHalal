@@ -14,6 +14,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-i18n": "4.15.4",
     "@strapi/plugin-users-permissions": "4.15.4",
     "@strapi/strapi": "4.15.4",
     "better-sqlite3": "^9.1.1",
@@ -23,6 +24,9 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
+  },
+  "engines": {
+    "node": "20.9.0"
   },
   "strapi": {
     "uuid": "bb09ff8a-0f95-45cb-b8b1-4ca4d0cd4bec"
