@@ -753,7 +753,6 @@ export interface ApiIngredientStateIngredientState
     istihlaak: Attribute.Boolean;
     istihala: Attribute.Boolean;
     haram: Attribute.Boolean;
-    regex: Attribute.String;
     explanation: Attribute.Text;
     schoolOfThought: Attribute.JSON;
     ingredients: Attribute.Relation<

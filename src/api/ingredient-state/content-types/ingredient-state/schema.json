@@ -27,9 +27,6 @@
     "haram": {
       "type": "boolean"
     },
-    "regex": {
-      "type": "string"
-    },
     "explanation": {
       "type": "text"
     },
