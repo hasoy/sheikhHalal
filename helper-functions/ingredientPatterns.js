@@ -1,18 +1,17 @@
-import eNumbers from "./haram-e-numbers.json" assert { type: "json" };
-import URLS from "../../front-end/constants/Host.js";
-import fetch from "node-fetch";
+const E_NUMBERS = require("./haram-e-numbers");
 
-const alcohol = /alcohol|biers?$|wijn|sake$/;
-const stremsel = /stremsel|rennet|runsel|stremstof/;
-const vlees =
-  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|(?<!w)koe$|kalfs>|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt|bitterbal/;
+const alcoholRegex =
+  /alcohol|biers?$|rijst.?wijn|(witte|rode).?wijn|sake$|wijn/;
+const wijnAzijnRegex = /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur/;
+const stremselRegex = /stremsel|rennet|runsel|stremstof/;
+const vleesRegex =
+  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|(?<!w)koe$|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal/;
 const vetzurenRegex =
   /vetzuren|fatty.acid|vetzuur|poly.?oxyethyleen|glyceride|glycerol|glyco|lipid/;
-
 const kipeiRegex =
-  /kip(pe.)?.?ei|chicken egg|\b(kip)(pen)?(heel)?ei(wit|geel)?|heel ei/;
+  /kip(pe.)?.?ei|chicken egg|\b(kip)(pen)?(heel)?ei(wit|geel)?|heel ei|ei(geel|wit)/;
 const plantaardigRegex =
-  /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|gehakte|vegetarisch/;
+  /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch/;
 const halalRegex = /halal|ḥalāl|حلال|halaal|helal/;
 const halalMeatRegex = /mossel|zalm|skipjack/;
 
@@ -27,10 +26,17 @@ const halalPatterns = [
   { regex: halalRegex, reason: "Bevat het woordje halal" },
   { regex: halalMeatRegex, reason: "Bron is vis" },
 ];
-export const doubtfulPatterns = [
-  ...eNumbers,
+const doubtfulPatterns = [
+  ...E_NUMBERS,
   {
-    regex: stremsel,
+    // TODO: wijnazijn haram/twijfelachtig en welke wetscholen?
+    regex: wijnAzijnRegex,
+    explanation: "Bevat wijnazijn",
+    title: "wijnazijn",
+    istihlaak: true,
+  },
+  {
+    regex: stremselRegex,
     explanation: "Bevat stremsel",
     title: "stremsel",
     schoolOfThought: ["shafi", "maliki", "hanbali"],
@@ -42,16 +48,16 @@ export const doubtfulPatterns = [
     schoolOfThought: ["shafi", "hanbali"],
   },
 ];
-export const haramPatterns = [
+const haramPatterns = [
   {
-    regex: vlees,
+    regex: vleesRegex,
     explanation: "Bevat vlees",
     title: "vlees",
     consensus: true,
     haram: true,
   },
   {
-    regex: alcohol,
+    regex: alcoholRegex,
     explanation: "Bevat alcohol",
     title: "alcohol",
     consensus: true,
@@ -59,32 +65,32 @@ export const haramPatterns = [
   },
 ];
 
-export function splitAllIngredientsToArray(ingredientsArray) {
-  if (!ingredientsArray) {
+function splitAllIngredientsToArray(ingredientsString) {
+  if (!ingredientsString) {
     return [];
   }
 
-  const regExAllIngredients =
+  const cleanIngredientsReg =
     /\d+(,\d+)?%|\x5d|\d{1,2}\s%|[kK]an (.*)|bevatt?e?n? |emulgatore?n?|conserveermiddele?n?|antioxidante?n?|kleurstoff?e?n?|voeding?szuu?re?n?|stabilisatore?n?|bevat mogelijk|kan\s\w+\sbevatten|kan\s *|van biologische? oorsprong|^andere|\d+([,.]\d+)?%|\d{1,2}\smg|ingredi.nte?n?|dit product|producte?n?|ingemaakte|specerijen|ingredi[ëe]nte?n?|oa\s|0a\s/gim;
   // converts e numbers from e 252 to e252
   const eNumberRegex = /e\s(\d{3})/g;
 
-  const cleanedArray = ingredientsArray
-    .replace(regExAllIngredients, "")
+  const cleanedArray = ingredientsString
+    .replace(cleanIngredientsReg, "")
     .replace(eNumberRegex, "e$1")
     .trim();
 
-  const splitRegex = /[^a-zA-Z0-9_ï ë'-]/gm;
+  const splitIngredientsReg = /[^a-zA-Z0-9_ï ë'-]/gm;
 
   const splitIngredientsArray = cleanedArray
-    .split(splitRegex)
+    .split(splitIngredientsReg)
     .map((ingredient) => {
-      return ingredient.replace(splitRegex, "").trim().toLowerCase();
+      return ingredient.replace(splitIngredientsReg, "").trim().toLowerCase();
     });
   return splitIngredientsArray;
 }
 
-export function checkIngredientStatus(ingredient) {
+function checkIngredientStatus(ingredient) {
   if (!ingredient) {
     return;
   }
@@ -96,20 +102,25 @@ export function checkIngredientStatus(ingredient) {
       return { current_ingredient, halal: true, reason: pattern.reason };
     }
   }
-
-  const allPatterns = [...haramPatterns, ...doubtfulPatterns];
-  for (const pattern of allPatterns) {
+  const checkPattern = (pattern, current_ingredient) => {
     const regex = new RegExp(pattern.regex);
     if (regex.test(current_ingredient) === true) {
       return { pattern, current_ingredient };
     }
+  };
+  for (const pattern of doubtfulPatterns) {
+    const status = checkPattern(pattern, current_ingredient);
+    if (status) return status;
+  }
+  for (const pattern of haramPatterns) {
+    const status = checkPattern(pattern, current_ingredient);
+    if (status) return status;
   }
 }
 
-export async function findIngredientId(title) {
-  const postedIngredient = await fetch(
-    `${URLS.HOST}${URLS.INGREDIENT_STATE}?filters[title][$eqi]=${title}`
-  );
-  const res = await postedIngredient.json();
-  return res.data[0] ? res.data[0].id : null;
-}
+module.exports = {
+  splitAllIngredientsToArray,
+  checkIngredientStatus,
+  doubtfulPatterns,
+  haramPatterns,
+};

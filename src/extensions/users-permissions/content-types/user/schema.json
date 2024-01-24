@@ -73,12 +73,6 @@
       ],
       "default": "default"
     },
-    "scans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::scan.scan",
-      "mappedBy": "scan"
-    },
     "reported_products": {
       "type": "relation",
       "relation": "oneToMany",

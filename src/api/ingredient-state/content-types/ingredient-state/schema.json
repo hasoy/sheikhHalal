@@ -38,6 +38,9 @@
       "relation": "oneToMany",
       "target": "api::ingredient.ingredient",
       "mappedBy": "ingredient_state"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

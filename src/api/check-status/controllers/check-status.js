@@ -5,9 +5,9 @@
  */
 
 module.exports = {
-  exampleAction: async (ctx, next) => {
+  exampleAction: async (ctx) => {
     try {
-      const { data } = ctx.request.body; // Access the data in the request body
+      const { data } = ctx.request.body;
       const splitData = await import(
         "../../../../helper-functions/ingredientPatterns.js"
       ).then((module) => module.splitAllIngredientsToArray(data));

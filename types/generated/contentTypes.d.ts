@@ -663,11 +663,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       ['maliki', 'hanafi', 'hanbali', 'shafi', 'default']
     > &
       Attribute.DefaultTo<'default'>;
-    scans: Attribute.Relation<
-      'plugin::users-permissions.user',
-      'oneToMany',
-      'api::scan.scan'
-    >;
     reported_products: Attribute.Relation<
       'plugin::users-permissions.user',
       'oneToMany',
@@ -760,6 +755,7 @@ export interface ApiIngredientStateIngredientState
       'oneToMany',
       'api::ingredient.ingredient'
     >;
+    name: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -973,11 +969,6 @@ export interface ApiScanScan extends Schema.CollectionType {
       'api::scan.scan',
       'manyToOne',
       'api::product.product'
-    >;
-    scan: Attribute.Relation<
-      'api::scan.scan',
-      'manyToOne',
-      'plugin::users-permissions.user'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
