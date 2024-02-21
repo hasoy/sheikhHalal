@@ -5,7 +5,7 @@ const E_NUMBERS = [
     type: "Kleur",
     regex: "e101|riboflavine",
     explanation:
-      "Gele kleurstof. vitamine B2. Komt van nature voor in melk, eieren, bladgroenten en lever. Het wordt gemaakt met behulp van bacteri�n of gisten. Bij de productie van de stof kunnen genetisch gemodificeerde organismen zijn gebruikt.",
+      "Gele kleurstof. vitamine B2. Komt van nature voor in melk, eieren, bladgroenten en lever. Het wordt gemaakt met behulp van bacteriën of gisten. Bij de productie van de stof kunnen genetisch gemodificeerde organismen zijn gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -17,7 +17,7 @@ const E_NUMBERS = [
     type: "Kleur",
     regex: "cochenille|karmijn|karmijnzuur|carmine|e120",
     explanation:
-      "Rode kleurstof. Komt van nature voor in de schildluis Dactylopius coccus, die leeft op verschillende soorten schijfcactussen. Omdat de kleurstof wordt gewonnen uit schildluizen is het niet geschikt voor veganisten, vegetari�rs en sommige religies. Soms kan een overgevoeligheidsreactie optreden na het eten van deze stof.",
+      "Rode kleurstof. Komt van nature voor in de schildluis Dactylopius coccus, die leeft op verschillende soorten schijfcactussen. Omdat de kleurstof wordt gewonnen uit schildluizen is het niet geschikt voor veganisten, vegetariërs en sommige religies. Soms kan een overgevoeligheidsreactie optreden na het eten van deze stof.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -28,7 +28,7 @@ const E_NUMBERS = [
     type: "Kleur - Caroteen",
     regex: "CI Food Orange 5|provitamine|e160a",
     explanation:
-      "Geel tot oranje kleurstof. Komt van nature voor in wortels en wordt daar ook uit gewonnen. Het kan ook kunstmatig gemaakt worden. Carotenen staan ook bekend als provitamine A. Het lichaam zet dit om in vitamine A. Soms wordt voor deze kleurstof een draagstof gebruikt die gelatine bevat. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetari�rs en sommige religies.",
+      "Geel tot oranje kleurstof. Komt van nature voor in wortels en wordt daar ook uit gewonnen. Het kan ook kunstmatig gemaakt worden. Carotenen staan ook bekend als provitamine A. Het lichaam zet dit om in vitamine A. Soms wordt voor deze kleurstof een draagstof gebruikt die gelatine bevat. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetariërs en sommige religies.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -39,7 +39,7 @@ const E_NUMBERS = [
     type: "Kleur - Caroteen",
     regex: "lycopeen|e160d",
     explanation:
-      "Rode kleurstof. Komt van nature voor in veel rode en gele planten en vruchten. Kan worden gewonnen uit tomaten en kan ook kunstmatig gemaakt worden, onder andere met behulp van een schimmel. Soms wordt voor deze kleurstof gelatine gebruikt. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetari�rs en sommige religies.",
+      "Rode kleurstof. Komt van nature voor in veel rode en gele planten en vruchten. Kan worden gewonnen uit tomaten en kan ook kunstmatig gemaakt worden, onder andere met behulp van een schimmel. Soms wordt voor deze kleurstof gelatine gebruikt. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetariërs en sommige religies.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -50,7 +50,7 @@ const E_NUMBERS = [
     type: "Kleur - Caroteen",
     regex: "e160e",
     explanation:
-      "Oranje kleurstof. Komt veel in de natuur voor in verschillende groenten, citrus vruchten en planten. Wordt kunstmatig gemaakt. Bij het gebruik van de kleurstof kan gelatine gebruikt worden. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetari�rs en sommige religies.",
+      "Oranje kleurstof. Komt veel in de natuur voor in verschillende groenten, citrus vruchten en planten. Wordt kunstmatig gemaakt. Bij het gebruik van de kleurstof kan gelatine gebruikt worden. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetariërs en sommige religies.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -62,7 +62,7 @@ const E_NUMBERS = [
     type: "Antioxidanten-Vitamine C en derivaten",
     regex: "e304|ascorbyl.?palmitaat|ascorbyl.?stearaat",
     explanation:
-      "Antioxidant. Wordt kunstmatig gemaakt. Het wordt gebruikt in vetrijke producten zoals koek en gebak om bederf tegen te gaan. Een onderdeel van de stof is palmitinezuur. Dit wordt vrijwel altijd gewonnen uit plantaardig vet, maar kan ook uit dierlijk vet komen. Hierdoor kan het niet geschikt zijn voor veganisten, vegetari�rs en sommige religies.",
+      "Antioxidant. Wordt kunstmatig gemaakt. Het wordt gebruikt in vetrijke producten zoals koek en gebak om bederf tegen te gaan. Een onderdeel van de stof is palmitinezuur. Dit wordt vrijwel altijd gewonnen uit plantaardig vet, maar kan ook uit dierlijk vet komen. Hierdoor kan het niet geschikt zijn voor veganisten, vegetariërs en sommige religies.",
     istihlaak: false,
     consensus: false,
     schoolOfThought: ["shafi", "hanbali"],
@@ -84,7 +84,7 @@ const E_NUMBERS = [
     type: "Suikeralcohol",
     regex: "e422|glycerine|glycerol|suikeralcohol",
     explanation:
-      "Bevochtigingsmiddel en verdikkingsmiddel. Komt van nature voor als bestanddeel van dierlijke en plantaardige vetten en oli�n en komt ook in ons lichaam voor. Het wordt gewonnen uit vetten en oli�n, kunstmatig gemaakt door stoffen te bewerken of met behulp van een bacterie uit suikers. Het wordt gebruikt om producten te beschermen tegen uitdrogen of steviger te maken. Het kan ook gebruikt worden in biologische plantenextracten. Het kan gemaakt zijn door bewerking van dierlijke vetten. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Bevochtigingsmiddel en verdikkingsmiddel. Komt van nature voor als bestanddeel van dierlijke en plantaardige vetten en oliën en komt ook in ons lichaam voor. Het wordt gewonnen uit vetten en oliën, kunstmatig gemaakt door stoffen te bewerken of met behulp van een bacterie uit suikers. Het wordt gebruikt om producten te beschermen tegen uitdrogen of steviger te maken. Het kan ook gebruikt worden in biologische plantenextracten. Het kan gemaakt zijn door bewerking van dierlijke vetten. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -96,7 +96,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e430|polyoxylee.?stearaat",
     explanation:
-      "Synthetisch product, gemaakt uit oxyethyleen-diolethers (synthetisch) en stearinezuur (een natuurlijk vetzuur). Deze groep stoffen (430-E436) bevatten vetzuren. Deze vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n. Het gebruik van dierlijk vet (incl. varkensvet) kan echter niet volledig worden uitgesloten. Chemisch is dit niet te onderscheiden en alleen de producent van het product kan aangeven wat de bron is van het vet.",
+      "Synthetisch product, gemaakt uit oxyethyleen-diolethers (synthetisch) en stearinezuur (een natuurlijk vetzuur). Deze groep stoffen (430-E436) bevatten vetzuren. Deze vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën. Het gebruik van dierlijk vet (incl. varkensvet) kan echter niet volledig worden uitgesloten. Chemisch is dit niet te onderscheiden en alleen de producent van het product kan aangeven wat de bron is van het vet.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -108,7 +108,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e431|polyoxyleen.?stearaat|polyoxyethyleen.?monostearaat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt. Het wordt gebruikt om vet en water te mengen. De stof bevat vetzuren, die vrijwel altijd afkomstig zijn van plantaardige oli�n, maar soms wordt er dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Wordt momenteel niet gebruikt in voedingsmiddelen",
+      "Emulgator. Wordt kunstmatig gemaakt. Het wordt gebruikt om vet en water te mengen. De stof bevat vetzuren, die vrijwel altijd afkomstig zijn van plantaardige oliën, maar soms wordt er dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Wordt momenteel niet gebruikt in voedingsmiddelen",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -120,7 +120,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e432|mono.?lauraat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
+      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -132,7 +132,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e433|mono.?leaat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
+      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -144,7 +144,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e434|sorbitaan.?monopalmitaat|monopalmitaat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
+      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -156,7 +156,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e435|sorbitaan.?mono.?stearaat|monostearaat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
+      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -168,7 +168,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e436|sorbitaan.?tristearaat|tristearaat",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
+      "Emulgator. Wordt kunstmatig gemaakt door verschillende stoffen, waaronder vetzuren, te bewerken. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is de stof in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -180,7 +180,7 @@ const E_NUMBERS = [
     type: "Natuurlijk verdikkingsmiddel",
     regex: "e441|gelatine",
     explanation:
-      "Gewonnen uit slachtafval, vooral beenderen en huid. Kan afkomstig zijn van iedere diersoort. Verdikkingsmiddel, geleer- en bindmiddel. Vooral gebruikt in producten die niet verhit kunnen worden, aangezien het al bij lage temperaturen een gel vormt. kan niet gebruikt worden door veganisten en vegetari�rs. Gebruik door moslims en andere religieuze groepen is beperkt en afhankelijk van de oorsprong. Helaas is meestal niet te zien of er runder-, varkens- of visafval is gebruikt voor de productie. Dit kan alleen door de producent worden aangegeven. Er bestaat specifiek halal gelatine afkomstig van runderen.",
+      "Gewonnen uit slachtafval, vooral beenderen en huid. Kan afkomstig zijn van iedere diersoort. Verdikkingsmiddel, geleer- en bindmiddel. Vooral gebruikt in producten die niet verhit kunnen worden, aangezien het al bij lage temperaturen een gel vormt. kan niet gebruikt worden door veganisten en vegetariërs. Gebruik door moslims en andere religieuze groepen is beperkt en afhankelijk van de oorsprong. Helaas is meestal niet te zien of er runder-, varkens- of visafval is gebruikt voor de productie. Dit kan alleen door de producent worden aangegeven. Er bestaat specifiek halal gelatine afkomstig van runderen.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -191,7 +191,7 @@ const E_NUMBERS = [
     type: "Synthetische emulgator",
     regex: "e422|fosfatidine.?zuur|glyceride|ammonium.?fosfatide",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt. Het wordt gebruikt om vet en water te mengen en om producten in een bepaalde toestand te houden. De stoffen bevatten vetzuren, die vrijwel altijd afkomstig zijn van plantaardige oli�n, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt. Het wordt gebruikt om vet en water te mengen en om producten in een bepaalde toestand te houden. De stoffen bevatten vetzuren, die vrijwel altijd afkomstig zijn van plantaardige oliën, maar soms wordt dierlijk vet gebruikt, zoals varkensvet. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -203,7 +203,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e470",
     explanation:
-      "Emulgator en stabilisator. Zijn combinaties van vetzuren met andere stoffen. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt, zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt er dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Emulgator en stabilisator. Zijn combinaties van vetzuren met andere stoffen. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt, zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt er dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -215,7 +215,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e471",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door stoffen, waaronder vetzuren, te bewerken. De glyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door stoffen, waaronder vetzuren, te bewerken. De glyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -227,7 +227,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "aceto.?glyceride|di.?glyceride|e472a",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -239,7 +239,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "lactoglyceride|e472b",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -251,7 +251,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "citrem|citroglyceride|e472c",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -263,7 +263,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e472d",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -275,7 +275,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e472e",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -287,7 +287,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e472f",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -299,7 +299,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e472|di.?glyceride",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422), azijnzuur (E 260) en vetzuren. Het komt ook van nature voor in ons lichaam. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -311,7 +311,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e473|sucro.?ester|suiker.?ester",
     explanation:
-      "Emulgatoren en stabilisatoren. Wordt kunstmatig gemaakt met suiker, glycerol (E 422) en vetzuren. Deze stoffen komen ook van nature voor in ons lichaam. De sucrose-esters worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee de stoffen worden gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Emulgatoren en stabilisatoren. Wordt kunstmatig gemaakt met suiker, glycerol (E 422) en vetzuren. Deze stoffen komen ook van nature voor in ons lichaam. De sucrose-esters worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee de stoffen worden gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -323,7 +323,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e474|suikerglyceri",
     explanation:
-      "Emulgatoren en stabilisatoren. Wordt kunstmatig gemaakt met suiker, glycerol (E 422) en vetzuren. Deze stoffen komen ook van nature voor in ons lichaam. Sucroglyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee de stoffen worden gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Emulgatoren en stabilisatoren. Wordt kunstmatig gemaakt met suiker, glycerol (E 422) en vetzuren. Deze stoffen komen ook van nature voor in ons lichaam. Sucroglyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee de stoffen worden gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -335,7 +335,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "e475|poly.?glycerol.?vetzu|polyglycerine.?ester|vetzuur.?ester",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422) en vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422) en vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Bij de productie van deze stof kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -347,7 +347,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "glycerolester|ricinusolie|poly.?glycerolester|pgpr|e476",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422) en vetten uit wonderolie. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. Wonderolie wordt gewonnen uit de boom Ricinus sp. Glycerol komt van nature voor als bestanddeel van dierlijke en plantaardige vetten en oli�n en komt ook in ons lichaam voor. Het wordt gewonnen uit vetten en oli�n, kunstmatig gemaakt door stoffen te bewerken of met behulp van een bacterie uit suikers. Glycerol kan gemaakt zijn door bewerking van dierlijke vetten. Hierdoor is E 476 in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met glycerol (E 422) en vetten uit wonderolie. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. Wonderolie wordt gewonnen uit de boom Ricinus sp. Glycerol komt van nature voor als bestanddeel van dierlijke en plantaardige vetten en oliën en komt ook in ons lichaam voor. Het wordt gewonnen uit vetten en oliën, kunstmatig gemaakt door stoffen te bewerken of met behulp van een bacterie uit suikers. Glycerol kan gemaakt zijn door bewerking van dierlijke vetten. Hierdoor is E 476 in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -359,7 +359,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "propyleen.?glycolester|e477",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stoffen.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stoffen.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -383,7 +383,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "propyleen.?glycolester|e479",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stoffen.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt met vetzuren. Het wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stoffen.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -395,7 +395,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "natrium.?stearoyl.?lactylaat|natriumstearoyllactaat|e481",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door melkzuur (E 270) te mengen met vetzuren, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator. Wordt kunstmatig gemaakt door melkzuur (E 270) te mengen met vetzuren, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -407,7 +407,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "calcium.?stearoyl|e482",
     explanation:
-      "Emulgator. Wordt kunstmatig gemaakt door melkzuur (E 270) te mengen met vetzuren, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies",
+      "Emulgator. Wordt kunstmatig gemaakt door melkzuur (E 270) te mengen met vetzuren, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -419,7 +419,7 @@ const E_NUMBERS = [
     type: "Emulgatoren en stabilisatoren - zouten of esters van vetzuren",
     regex: "stearyl.?palmityl.?tartraat|e483",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door wijnsteenzuur (E 334) te mengen met een vetzuur, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door wijnsteenzuur (E 334) te mengen met een vetzuur, onderdelen die ook van nature voorkomen in ons lichaam. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -453,7 +453,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "amino.?azijn.?zuur|e491",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetari�rs en sommige religies",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetariërs en sommige religies",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -465,7 +465,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "sorbitaan.?tristearaat|e492",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -477,7 +477,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "sorbitaan.?mono.?lauraat|e493",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -489,7 +489,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "e494|sorbitaanmono.?.?leaat",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -501,7 +501,7 @@ const E_NUMBERS = [
     type: "Semi-synthetische emulgator",
     regex: "sorbitaan.?palmitaat|e495|sorbitaan.?mono.?palmitaat",
     explanation:
-      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Emulgator en stabilisator. Wordt kunstmatig gemaakt door sorbitol (E 420) te mengen met vetzuren. De stof wordt gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. De vetzuren waarmee het wordt gemaakt zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -513,7 +513,7 @@ const E_NUMBERS = [
     type: "Antiklontermiddel",
     regex: "e542|beender.?meel",
     explanation:
-      "Verkregen uit botten van dieren. Het wordt gebruikt als anti-klontermiddel, als emulgator, vochtbinder en in diverse landen als fosforbron in voedingssupplementen. Voornaamste toepassingen liggen echter in de cosmetica, zoals tandpasta. kan niet gebruikt worden door vegetari�rs, veganisten, Joden, Hindoes en Moslims, omdat de bron altijd dierlijk is. Het is meestal een mengsel afkomstig van verschillende diersoorten, zodat onreine dieren niet kunnen worden uitgesloten.",
+      "Verkregen uit botten van dieren. Het wordt gebruikt als anti-klontermiddel, als emulgator, vochtbinder en in diverse landen als fosforbron in voedingssupplementen. Voornaamste toepassingen liggen echter in de cosmetica, zoals tandpasta. kan niet gebruikt worden door vegetariërs, veganisten, Joden, Hindoes en Moslims, omdat de bron altijd dierlijk is. Het is meestal een mengsel afkomstig van verschillende diersoorten, zodat onreine dieren niet kunnen worden uitgesloten.",
     istihala: false,
     istihlaak: false,
     consensus: true,
@@ -524,7 +524,7 @@ const E_NUMBERS = [
     type: "Antiklontermiddel",
     regex: "e570|stearine.?zuur",
     explanation:
-      "Antiklontermiddel. Wordt voornamelijk uit plantaardige olie gewonnen. Vetzuren worden gebruikt om klonteren tegen te gaan. Het kan ook gebruikt worden als emulgator om vet en water te mengen en als glansmiddel. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oli�n, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Antiklontermiddel. Wordt voornamelijk uit plantaardige olie gewonnen. Vetzuren worden gebruikt om klonteren tegen te gaan. Het kan ook gebruikt worden als emulgator om vet en water te mengen en als glansmiddel. De vetzuren zijn vrijwel altijd afkomstig van plantaardige oliën, maar soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -536,7 +536,7 @@ const E_NUMBERS = [
     type: "Antiklontermiddel",
     regex: "e571|ammonium.?stearaat",
     explanation:
-      "Ammoniumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel en anti-schuimmiddel bij de suikerproductie. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetari�rs, veganisten, Joden, Moslims en Hindoes.",
+      "Ammoniumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel en anti-schuimmiddel bij de suikerproductie. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetariërs, veganisten, Joden, Moslims en Hindoes.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -548,7 +548,7 @@ const E_NUMBERS = [
     type: "Antiklontermiddel",
     regex: "e572|magnesium.?stearaat",
     explanation:
-      "Magnesiumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel en emulgator. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetari�rs, veganisten, Joden, Moslims en Hindoes.",
+      "Magnesiumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel en emulgator. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetariërs, veganisten, Joden, Moslims en Hindoes.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -560,7 +560,7 @@ const E_NUMBERS = [
     type: "Antiklontermiddel",
     regex: "e573|aluminium.?stearaat",
     explanation:
-      "Aluminiumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel als weekmaker in kauwgum en emulgator. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetari�rs, veganisten, Joden, Moslims en Hindoes.",
+      "Aluminiumzout van stearinezuur, E570. Het wordt gebruikt als anti-klontermiddel als weekmaker in kauwgum en emulgator. Alhoewel het vrijwel altijd plantaardig is, kunnen stearinezuur en stearaten afkomstig zijn van dieren, waarbij varkens en runderen niet uitgesloten zijn. Alleen de fabrikant van het product kan informatie verschaffen over de oorsprong. Het wordt dus afgeraden voor vegetariërs, veganisten, Joden, Moslims en Hindoes.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -572,7 +572,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "e621|natrium.?glutamaat",
     explanation:
-      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 621 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteri�n. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 621 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteriën. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -584,7 +584,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "e622|kalium.?glutamaat",
     explanation:
-      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 622 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteri�n. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 622 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteriën. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -596,7 +596,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "e623|calcium.?glutamaat",
     explanation:
-      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 623 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteri�n. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
+      "Smaakversterker. Komt van nature voor in oude kaas, moedermelk, tomaten en sardientjes. Glutamaten, waaronder E 623 Mononatriumglutamaat, zijn combinaties van glutaminezuur (E 620) met andere stoffen. Glutaminezuur is een aminozuur. Aminozuren komen ook veel in je lichaam voor. Ze zitten in eiwitten in je lichaam, maar ook in dierlijke producten zoals varkensvlees, rundvlees, kip en vis. Het glutaminezuur dat in voedingsmiddelen wordt gebruikt, wordt gemaakt met behulp van bacteriën. Glutaminezuur en glutamaten hebben de speciale umamismaak en wordt gebruikt om de hartige smaak van producten te versterken, waardoor minder zout nodig is. Hoewel de naam een relatie met gluten suggereert bevat de stoffen geen gluten. Producten waarin deze stof verwerkt kan zijn, kunnen dus gebruikt worden door mensen met een overgevoeligheid voor gluten. Bij de productie van mononatriumglutamaat (E 621) kunnen genetisch gemodificeerde organismen worden gebruikt.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -608,7 +608,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "natrium.?guanylaat|e627",
     explanation:
-      "Smaakversterker. Guanylaten, waaronder E 627 Natriumguanylaat, zijn combinaties van guanylzuur (E 626) met andere stoffen. Guanylzuur komt van nature voor in DNA en dus in alle cellen van elk levend wezen. Het wordt gewonnen uit gistextract en soms uit sardientjes. E 627 Natriumguanylaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Guanylaten, waaronder E 627 Natriumguanylaat, zijn combinaties van guanylzuur (E 626) met andere stoffen. Guanylzuur komt van nature voor in DNA en dus in alle cellen van elk levend wezen. Het wordt gewonnen uit gistextract en soms uit sardientjes. E 627 Natriumguanylaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -620,7 +620,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "calcium.?guanylaat|e629",
     explanation:
-      "Smaakversterker. Guanylaten, waaronder E 629 Calciumguanylaat, zijn combinaties van guanylzuur (E 626) met andere stoffen. Guanylzuur komt van nature voor in DNA en dus in alle cellen van elk levend wezen. Het wordt gewonnen uit gistextract en soms uit sardientjes. E 629 Calciumguanylaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Guanylaten, waaronder E 629 Calciumguanylaat, zijn combinaties van guanylzuur (E 626) met andere stoffen. Guanylzuur komt van nature voor in DNA en dus in alle cellen van elk levend wezen. Het wordt gewonnen uit gistextract en soms uit sardientjes. E 629 Calciumguanylaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -632,7 +632,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "inosinezuur|e630",
     explanation:
-      "Smaakversterker. Wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. Het wordt gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. Het wordt gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -644,7 +644,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "natrium-?inosinaat|e631",
     explanation:
-      "Smaakversterker. Inosinaten, waaronder E 631 Dinatriuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 631 Dinatriuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Inosinaten, waaronder E 631 Dinatriuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 631 Dinatriuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -656,7 +656,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "kalium.?inosinaat|e632",
     explanation:
-      "Smaakversterker. Inosinaten, waaronder E 632 Dikaliuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 632 Dikaliuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies..",
+      "Smaakversterker. Inosinaten, waaronder E 632 Dikaliuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 632 Dikaliuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies..",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -668,7 +668,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "calcium.inosinaat|e633",
     explanation:
-      "Smaakversterker. Inosinaten, waaronder E 633 Calciuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 633 Calciuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Inosinaten, waaronder E 633 Calciuminosinaat, zijn combinaties van inosinezuur (E 630) met andere stoffen. Inosinezuur wordt gewonnen uit vlees en sardientjes. Het wordt ook wel gemaakt door een bacterie uit suiker. E 633 Calciuminosinaat valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -680,7 +680,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "calcium.?ribonucleotide|e634",
     explanation:
-      "Smaakversterker. E 634 Calcium-5�-ribonucleotiden is een combinatie van guanylaten en inosinaten. Guanylaten en inosinaten zijn op hun beurt weer combinaties van guanylzuur (E 626) en inosinezuur (E 630) met andere stoffen. E 634 Calcium-5�-ribonucleotiden valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. E 634 Calcium-5ë-ribonucleotiden is een combinatie van guanylaten en inosinaten. Guanylaten en inosinaten zijn op hun beurt weer combinaties van guanylzuur (E 626) en inosinezuur (E 630) met andere stoffen. E 634 Calcium-5ë-ribonucleotiden valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -692,7 +692,7 @@ const E_NUMBERS = [
     type: "Smaakversterker",
     regex: "natrium.?ribonucleotide|e635",
     explanation:
-      "Smaakversterker. E 635 Dinatrium-5�-ribonucleotiden is een combinatie van guanylaten en inosinaten. Guanylaten en inosinaten zijn op hun beurt weer combinaties van guanylzuur (E 626) en inosinezuur (E 630) met andere stoffen. E 635 Dinatrium-5�-ribonucleotiden valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. E 635 Dinatrium-5ë-ribonucleotiden is een combinatie van guanylaten en inosinaten. Guanylaten en inosinaten zijn op hun beurt weer combinaties van guanylzuur (E 626) en inosinezuur (E 630) met andere stoffen. E 635 Dinatrium-5ë-ribonucleotiden valt onder de ribonucleotiden. Deze worden gebruikt om de umamismaak van producten te versterken, waardoor veel minder zout nodig is. Er zijn enkele gevallen bekend waarbij een overgevoeligheidsreactie optrad na het eten van deze stof. Omdat deze stof soms gewonnen worden uit dierlijke producten, is deze in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,
@@ -704,7 +704,7 @@ const E_NUMBERS = [
     type: "Supplement en broodverbeteraar",
     regex: "natriumglycinaat|glycocol|e640",
     explanation:
-      "Smaakversterker. Komt van nature voor in eiwitten in je lichaam, maar ook in dierlijke producten zoals vlees. Het wordt kunstmatig gemaakt uit gelatine en slachtafval. Het wordt gebruikt om de zoete smaak van producten te versterken en een zoute, zure of bittere smaak te remmen. Aangezien het wordt gemaakt uit dierlijke producten is het niet geschikt voor veganisten, vegetari�rs en sommige religies.",
+      "Smaakversterker. Komt van nature voor in eiwitten in je lichaam, maar ook in dierlijke producten zoals vlees. Het wordt kunstmatig gemaakt uit gelatine en slachtafval. Het wordt gebruikt om de zoete smaak van producten te versterken en een zoute, zure of bittere smaak te remmen. Aangezien het wordt gemaakt uit dierlijke producten is het niet geschikt voor veganisten, vegetariërs en sommige religies.",
     istihala: true,
     istihlaak: false,
     consensus: false,

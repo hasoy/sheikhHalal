@@ -1,17 +1,17 @@
 const E_NUMBERS = require("./haram-e-numbers");
 
 const alcoholRegex =
-  /alcohol|biers?$|rijst.?wijn|(witte|rode).?wijn|sake$|wijn/;
-const wijnAzijnRegex = /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur/;
+  /alcohol|biers?$|rijst.?wijn|(witte|rode).?wijn|sake$|wijn|mirin/;
 const stremselRegex = /stremsel|rennet|runsel|stremstof/;
 const vleesRegex =
-  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|(?<!w)koe$|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal/;
+  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal|spare.?rib/;
 const vetzurenRegex =
   /vetzuren|fatty.acid|vetzuur|poly.?oxyethyleen|glyceride|glycerol|glyco|lipid/;
 const kipeiRegex =
   /kip(pe.)?.?ei|chicken egg|\b(kip)(pen)?(heel)?ei(wit|geel)?|heel ei|ei(geel|wit)/;
 const plantaardigRegex =
-  /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch/;
+  /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch|stevio/;
+const wijnAzijnRegex = /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur/;
 const halalRegex = /halal|ḥalāl|حلال|halaal|helal/;
 const halalMeatRegex = /mossel|zalm|skipjack/;
 
@@ -25,16 +25,13 @@ const halalPatterns = [
   { regex: kipeiRegex, reason: "Bevat ei" },
   { regex: halalRegex, reason: "Bevat het woordje halal" },
   { regex: halalMeatRegex, reason: "Bron is vis" },
+  {
+    regex: wijnAzijnRegex,
+    reason: "Bevat wijnazijn",
+  },
 ];
 const doubtfulPatterns = [
   ...E_NUMBERS,
-  {
-    // TODO: wijnazijn haram/twijfelachtig en welke wetscholen?
-    regex: wijnAzijnRegex,
-    explanation: "Bevat wijnazijn",
-    title: "wijnazijn",
-    istihlaak: true,
-  },
   {
     regex: stremselRegex,
     explanation: "Bevat stremsel",
@@ -71,7 +68,7 @@ function splitAllIngredientsToArray(ingredientsString) {
   }
 
   const cleanIngredientsReg =
-    /\d+(,\d+)?%|\x5d|\d{1,2}\s%|[kK]an (.*)|bevatt?e?n? |emulgatore?n?|conserveermiddele?n?|antioxidante?n?|kleurstoff?e?n?|voeding?szuu?re?n?|stabilisatore?n?|bevat mogelijk|kan\s\w+\sbevatten|kan\s *|van biologische? oorsprong|^andere|\d+([,.]\d+)?%|\d{1,2}\smg|ingredi.nte?n?|dit product|producte?n?|ingemaakte|specerijen|ingredi[ëe]nte?n?|oa\s|0a\s/gim;
+    /\d+(,\d+)?%|\x5d|\d{1,2}\s%|bevatt?e?n? |emulgatore?n?|conserveermiddele?n?|antioxidante?n?|kleurstoff?e?n?|voeding?szuu?re?n?|stabilisatore?n?|bevat mogelijk|kan\s\w+\sbevatten|kan\s *|van biologische? oorsprong|^andere|\d+([,.]\d+)?%|\d{1,2}\smg|ingredi.nte?n?|dit product|producte?n?|ingemaakte|specerijen|ingredi[ëe]nte?n?|oa\s|0a\s/gim;
   // converts e numbers from e 252 to e252
   const eNumberRegex = /e\s(\d{3})/g;
 
