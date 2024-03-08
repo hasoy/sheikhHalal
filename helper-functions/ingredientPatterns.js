@@ -4,7 +4,7 @@ const alcoholRegex =
   /alcohol|biers?$|rijst.?wijn|(witte|rode).?wijn|sake$|wijn|mirin/;
 const stremselRegex = /stremsel|rennet|runsel|stremstof/;
 const vleesRegex =
-  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal|spare.?rib/;
+  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal|spare.?rib|zwijn/;
 const vetzurenRegex =
   /vetzuren|fatty.acid|vetzuur|poly.?oxyethyleen|glyceride|glycerol|glyco|lipid/;
 const kipeiRegex =
@@ -13,8 +13,8 @@ const plantaardigRegex =
   /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch|stevio/;
 const wijnAzijnRegex = /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur/;
 const halalRegex = /halal|ḥalāl|حلال|halaal|helal/;
-const halalMeatRegex = /mossel|zalm|skipjack/;
-
+const halalMeatRegex = /mossel|zalm|skipjack|vis|fish/;
+const shrimpRegex = /garnaal|gamba|shrimp|garnal|scampi|udang/;
 const messages = {
   vetzuur:
     "Emulgator en stabilisator. De glyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. Soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
@@ -59,6 +59,14 @@ const haramPatterns = [
     title: "alcohol",
     consensus: true,
     haram: true,
+  },
+  {
+    regex: shrimpRegex,
+    explanation: "Bevat garnalen",
+    title: "garnaal",
+    consensus: false,
+    haram: true,
+    schoolOfThought: ["hanafi"],
   },
 ];
 
