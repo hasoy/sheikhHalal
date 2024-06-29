@@ -11,7 +11,8 @@
     "build": "strapi build",
     "dev": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "transfer": "strapi transfer --to https://coral-app-6m75s.ondigitalocean.app/admin"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.15.4",

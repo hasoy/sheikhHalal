@@ -1,3 +1,13 @@
+# add a .env file in the root of folder to run the project locally
+
+## example of .env file
+
+APP_KEYS={'test'}
+API_TOKEN_SALT={'test'}
+JWT_SECRET=W9QM8ya6z5rPJC/He6bFfQ==
+DATABASE_PASSWORD=acme
+ADMIN_JWT_SECRET=ZJG6C2J4s2rPJC/He6bFfQ==
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
@@ -55,3 +65,4 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+o

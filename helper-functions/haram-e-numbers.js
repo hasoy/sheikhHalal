@@ -53,7 +53,6 @@ const E_NUMBERS = [
       "Oranje kleurstof. Komt veel in de natuur voor in verschillende groenten, citrus vruchten en planten. Wordt kunstmatig gemaakt. Bij het gebruik van de kleurstof kan gelatine gebruikt worden. Daardoor kan deze kleurstof in sommige gevallen niet geschikt zijn voor veganisten, vegetariërs en sommige religies.",
     istihala: false,
     istihlaak: false,
-    consensus: true,
     schoolOfThought: ["shafi", "hanbali"],
   },
   {

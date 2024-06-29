@@ -4,17 +4,21 @@ const alcoholRegex =
   /alcohol|biers?$|rijst.?wijn|(witte|rode).?wijn|sake$|wijn|mirin/;
 const stremselRegex = /stremsel|rennet|runsel|stremstof/;
 const vleesRegex =
-  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal|spare.?rib|zwijn/;
+  /vlees|varken|bacon|(?<!w)kip(pen)?|chicken|kalfs|lams?$|rund|salami|pepp?eroni|kalkoen|gehakt\b|bitterbal|spare.?rib|zwijn|buffalo/;
 const vetzurenRegex =
   /vetzuren|fatty.acid|vetzuur|poly.?oxyethyleen|glyceride|glycerol|glyco|lipid/;
 const kipeiRegex =
-  /kip(pe.)?.?ei|chicken egg|\b(kip)(pen)?(heel)?ei(wit|geel)?|heel ei|ei(geel|wit)/;
+  /kip(pe.)?.?ei|chicken egg|\b(kip)(pen)?(heel)?ei(wit|geel)?|heel.?ei|ei(geel|wit)|vrije.?uitloop|eieren/;
 const plantaardigRegex =
-  /plantaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch|stevio/;
-const wijnAzijnRegex = /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur/;
+  /pla.ntaardig|plant.?based|plant.?origin|plant.?derived|plant.?extract|soja|vegan?|vegetarisch|stevio|niet.dierlijk.?|houth.rs/;
+const wijnAzijnRegex =
+  /wijn.?azijn|wijn.?zuur|(diacetyl)?wijnsteenzuur|kermirin|wijnblad|wijnsteen|alcohol.?azijn/;
 const halalRegex = /halal|ḥalāl|حلال|halaal|helal/;
-const halalMeatRegex = /mossel|zalm|skipjack|vis|fish/;
+const fruitFleshRegex = /vrucht|vruchtvlees|cocosvlees|kokos/;
+const halalMeatRegex =
+  /mossel|zalm|skipjack|vis|fish|fijngehakt|visvetzuren|makreel|kreeft|krab/;
 const shrimpRegex = /garnaal|gamba|shrimp|garnal|scampi|udang/;
+const exceptionsRegex = /geen|polyvinyl|free from|alcoholvrije/;
 const messages = {
   vetzuur:
     "Emulgator en stabilisator. De glyceriden worden gebruikt om water en vet te mengen en om producten in een bepaalde toestand te houden. Soms wordt dierlijk vet zoals varkensvet gebruikt. Hierdoor is het in sommige gevallen niet geschikt voor veganisten, vegetariërs en sommige religies.",
@@ -25,6 +29,8 @@ const halalPatterns = [
   { regex: kipeiRegex, reason: "Bevat ei" },
   { regex: halalRegex, reason: "Bevat het woordje halal" },
   { regex: halalMeatRegex, reason: "Bron is vis" },
+  { regex: fruitFleshRegex, reason: "Vruchtvlees is niet haram" },
+  { regex: exceptionsRegex, reason: "Is een uitzondering" },
   {
     regex: wijnAzijnRegex,
     reason: "Bevat wijnazijn",
@@ -76,7 +82,7 @@ function splitAllIngredientsToArray(ingredientsString) {
   }
 
   const cleanIngredientsReg =
-    /\d+(,\d+)?%|\x5d|\d{1,2}\s%|bevatt?e?n? |emulgatore?n?|conserveermiddele?n?|antioxidante?n?|kleurstoff?e?n?|voeding?szuu?re?n?|stabilisatore?n?|bevat mogelijk|kan\s\w+\sbevatten|kan\s *|van biologische? oorsprong|^andere|\d+([,.]\d+)?%|\d{1,2}\smg|ingredi.nte?n?|dit product|producte?n?|ingemaakte|specerijen|ingredi[ëe]nte?n?|oa\s|0a\s/gim;
+    /\d+(,\d+)?%|\x5d|\d{1,2}\s%|bevatt?e?n? |u002f|amp;|nbsp|_x000d_|emulgatore?n?|conserveermiddele?n?|antioxidante?n?|kleurstoff?e?n?|voeding?szuu?re?n?|stabilisatore?n?|bevat mogelijk|kan\s\w+\sbevatten|kan\s *|van biologische? oorsprong|^andere|\d+([,.]\d+)?%|\d{1,2}\smg|ingredi.nte?n?|dit product|producte?n?|ingemaakte|specerijen|ingredi[ëe]nte?n?|oa\s|0a\s/gim;
   // converts e numbers from e 252 to e252
   const eNumberRegex = /e\s(\d{3})/g;
 
@@ -85,7 +91,7 @@ function splitAllIngredientsToArray(ingredientsString) {
     .replace(eNumberRegex, "e$1")
     .trim();
 
-  const splitIngredientsReg = /[^a-zA-Z0-9_ï ë'-]/gm;
+  const splitIngredientsReg = /[^a-zA-Z0-9_ï ë'é]| en /gm;
 
   const splitIngredientsArray = cleanedArray
     .split(splitIngredientsReg)
